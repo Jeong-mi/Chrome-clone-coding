@@ -4,16 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/quote.css">
+    <link rel="stylesheet" href="css/greeting.css">
+    <link rel="stylesheet" href="css/weather.css">
+
+
     <title>Momentum</title>
 </head>
 <body>
-    <div id="login-form">
-        <input type="text" placeholder="what is your name?" />
-        <button>Log In</button>
+    <class class="body-column">
+        <form id="login-form" class="hidden">
+            <!-- html 안에서 길이수 제한하고, 필수로 넣기 제한 
+                input을 form 안에 넣어야 함-->
+            <input          
+                required 
+                maxlength=15
+                type="text" 
+                placeholder="what is your name?" />
+            <!-- <input type="submit" value="Log In"> 
+                form이 자동으로 섭밋되고 있음(엔터하거나 버튼 누를 시). 우리는 더이상 버튼클릭에 신경쓸 필요가 없음 
+                하지만 브라우저가 새로고침하지 않고 user정보를 저장하도록 하고 싶음-->
+        
+        </form>
+        <h2 id="clock">00:00:00</h2>
+        <h1 id="greeting" class="hidden"></h1>
+       
+        
+        <div id="weather">
+            <img id = "weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png"/>
+            <div id= "weather-info">
+                <div></div>
+                <div></div>
+
+            </div> 
+        </div>
+    
+    </class>
+    
+
+
+        <!-- <div id= "weather">
+            
+                <span></span>
+                <span></span>
+            
+        </div>  -->
     </div>
+
+    <div class="body-column todo-quote">
+        <div id="quote">
+            <div></div>
+            <br>
+            <div></div>
+        </div>
+        <div class = "todo">
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do" required/>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+        
+    </div>
+    
 </body>
 
 </html>
 
-<script src="app.js"></script>
+<script src="js/greeting.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/quotes.js"></script>
+<script src="js/background.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/weather1.js"></script>
+
+
+
+

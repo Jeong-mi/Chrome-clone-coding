@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Y_Spotlight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#greeting
+{
+  position: relative;
+}
+
+
+
+#greeting {
+  font-family: 'Y_Spotlight';
+ font-weight: 100;
+    font-size: 26px;
+
+}
+
+.body-column h2{
+  margin: 0;
+}
+
+.body-column h1{
+  margin: 0;
+}
+
+#clock {
+    font-size: 120px;
+    word-spacing: -18px;
+    letter-spacing: 2px;
+}

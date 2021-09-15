@@ -1,0 +1,12 @@
+
+.todo {
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 50px;
+  }
+  
+#todo-form input::placeholder {
+    font-size: 30px;
+}
